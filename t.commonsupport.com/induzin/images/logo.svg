@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 65" width="300" height="65">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8C35A" />
+      <stop offset="50%" style="stop-color:#D4A843" />
+      <stop offset="100%" style="stop-color:#B8922E" />
+    </linearGradient>
+  </defs>
+  <!-- W Mark - Bold Geometric -->
+  <g transform="translate(8, 6)">
+    <polygon points="0,4 5,4 15,40 24,16 26,16 35,40 45,4 50,4 38,50 33,50 26,28 19,50 14,50" fill="url(#goldGrad)"/>
+    <!-- Oil Drop Accent - centered below W valley -->
+    <ellipse cx="26" cy="48" rx="3.5" ry="4.5" fill="url(#goldGrad)"/>
+    <circle cx="26" cy="43.5" r="0" fill="url(#goldGrad)"/>
+    <path d="M26,40 Q23,45 23,47.5 Q23,50.5 26,50.5 Q29,50.5 29,47.5 Q29,45 26,40Z" fill="url(#goldGrad)"/>
+  </g>
+  <!-- Divider Line -->
+  <line x1="72" y1="12" x2="72" y2="53" stroke="#D4A843" stroke-width="1.5" opacity="0.6"/>
+  <!-- Text: W OIL AND GAS -->
+  <text x="84" y="34" font-family="'Archivo', 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="22" fill="#0C1D36" letter-spacing="1.5">W OIL AND GAS</text>
+  <!-- Tagline -->
+  <text x="84" y="50" font-family="'Roboto', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="8.5" fill="#7A8599" letter-spacing="3.5">ENERGY · EXCELLENCE · NIGERIA</text>
+</svg>

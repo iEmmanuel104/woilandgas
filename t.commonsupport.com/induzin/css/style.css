@@ -10915,3 +10915,54 @@ img{
 	width: auto;
 	max-height: 60px;
 }
+
+/* ---- HOMEPAGE SMOOTHNESS FIXES ---- */
+
+/* Reduce hero banner height - cleaner and more compact */
+.banner-section .slide-item .content-box {
+	height: 550px;
+}
+
+/* Ensure first slide content is visible immediately (no flash of empty content) */
+.banner-section .slide-item .title,
+.banner-section .slide-item h2,
+.banner-section .slide-item .text,
+.banner-section .slide-item .btn-box {
+	opacity: 1 !important;
+	transform: translateY(0) !important;
+}
+
+/* Hide carousel nav arrows for cleaner look */
+.banner-section .owl-nav {
+	display: none;
+}
+
+/* Tighten about section spacing */
+.about-us {
+	padding: 80px 0 50px;
+}
+
+/* Tighten services section */
+.services-section {
+	padding: 80px 0 60px;
+}
+
+/* CTA section - reduce excessive padding */
+.about-company {
+	padding: 80px 0;
+}
+
+/* Footer widgets - tighter spacing */
+.main-footer .widgets-section {
+	padding: 60px 0 30px;
+}
+
+/* Smoother page title banner on inner pages */
+.page-title {
+	padding: 100px 0 60px;
+}
+
+/* Preloader - reduce time user waits */
+.preloader {
+	transition: opacity 0.3s ease;
+}

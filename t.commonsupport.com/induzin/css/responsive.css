@@ -1310,3 +1310,53 @@
 		margin-bottom: 25px;
 	}
 }
+
+/* Clean mobile header layout */
+@media only screen and (max-width: 991px) {
+	/* Hide the separate header-lower bar on mobile */
+	.main-header .header-lower {
+		position: absolute;
+		right: 15px;
+		top: 0;
+		z-index: 99;
+		border: none !important;
+		background: transparent !important;
+		box-shadow: none !important;
+		padding: 0 !important;
+	}
+
+	.main-header .header-lower .auto-container {
+		padding: 0;
+	}
+
+	.main-header .header-lower .main-box {
+		border: none !important;
+		box-shadow: none !important;
+	}
+
+	/* Position hamburger at top-right of header */
+	.nav-outer .mobile-nav-toggler {
+		font-size: 26px !important;
+		line-height: 1 !important;
+		color: #D4A843 !important;
+		padding: 18px 0 !important;
+		margin: 0 !important;
+	}
+
+	/* Clean up header-upper on mobile */
+	.main-header .header-upper {
+		padding: 10px 0;
+	}
+
+	/* Hide header-top bar on small mobile for cleaner look */
+	.main-header .header-top {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.main-header .header-top .top-left,
+	.main-header .header-top .contact-info {
+		display: none;
+	}
+}

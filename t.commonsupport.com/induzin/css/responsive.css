@@ -1313,34 +1313,49 @@
 
 /* Clean mobile header layout */
 @media only screen and (max-width: 991px) {
-	/* Hide the separate header-lower bar on mobile */
+	/* Overlay header-lower on the header-upper for compact mobile layout */
 	.main-header .header-lower {
 		position: absolute;
 		right: 15px;
-		top: 0;
-		z-index: 99;
+		top: 15px;
+		z-index: 999;
 		border: none !important;
 		background: transparent !important;
 		box-shadow: none !important;
 		padding: 0 !important;
+		width: auto !important;
 	}
 
 	.main-header .header-lower .auto-container {
 		padding: 0;
+		width: auto;
 	}
 
 	.main-header .header-lower .main-box {
 		border: none !important;
 		box-shadow: none !important;
+		padding: 0 !important;
 	}
 
-	/* Position hamburger at top-right of header */
+	/* Show CSS hamburger on mobile */
 	.nav-outer .mobile-nav-toggler {
-		font-size: 26px !important;
-		line-height: 1 !important;
-		color: #D4A843 !important;
-		padding: 18px 0 !important;
+		display: block !important;
+		float: none !important;
+		padding: 0 !important;
 		margin: 0 !important;
+	}
+
+	/* Compact header-upper on mobile */
+	.main-header .header-upper .auto-container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 12px 15px;
+	}
+
+	.main-header .logo-outer {
+		text-align: left !important;
+		width: auto !important;
 	}
 
 	/* Clean up header-upper on mobile */
@@ -1351,6 +1366,13 @@
 	/* Hide header-top bar on small mobile for cleaner look */
 	.main-header .header-top {
 		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	/* Hide entire top bar on mobile - not needed */
+	.main-header .header-top {
+		display: none !important;
 	}
 }
 
